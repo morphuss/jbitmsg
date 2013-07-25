@@ -15,6 +15,7 @@ public class App {
         md.update(text.getBytes("UTF-8"), 0, text.length());
         sha1hash = md.digest();
         
+        
         BigInteger number = new BigInteger(1,sha1hash);
         System.out.println(sha1hash[3]);
         System.out.println(number.toString(16));
